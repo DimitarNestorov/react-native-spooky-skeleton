@@ -32,6 +32,8 @@ using namespace facebook::react;
 
     _view = [[UIView alloc] init];
 
+    [_view performSelector:@selector(showSkeleton)];
+    
     self.contentView = _view;
   }
 

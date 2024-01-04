@@ -6,7 +6,7 @@ import { SpookySkeletonView } from 'react-native-spooky-skeleton';
 export default function App() {
   return (
     <View style={styles.container}>
-      <SpookySkeletonView color="#32a852" style={styles.box} />
+      <SpookySkeletonView style={styles.box} />
     </View>
   );
 }
@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 60,
-    height: 60,
+    width: 160,
+    height: 160,
     marginVertical: 20,
   },
 });

@@ -12,7 +12,9 @@ RCT_EXPORT_MODULE(SpookySkeletonView)
 
 - (UIView *)view
 {
-  return [[UIView alloc] init];
+  auto view = [[UIView alloc] init];
+  [view performSelector:@selector(showSkeleton)];
+  return view;
 }
 
 RCT_CUSTOM_VIEW_PROPERTY(color, NSString, UIView)
